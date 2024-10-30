@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTempoAgora.MainPage">
+
+    <ScrollView>
+        <StackLayout Spacing="10" Margin="10">
+
+            <!-- Primeira parte da interface -->
+            <Button Text="Buscar Previsão por Data" Clicked="OnBuscarPrevisaoPorDataClicked" />
+            <DatePicker x:Name="datePicker" />
+            <Label x:Name="lbl_resultadoBusca" />
+
+            <Button Text="Obter Localização" Clicked="Button_Clicked" />
+
+            <Label Text="Cidade:" />
+            <Entry x:Name="entryCidade" Placeholder="Insira a cidade" />
+
+
+            <Label Text="Latitude:" />
+            <Entry x:Name="lbl_latitude" Text="37,421998333333335" />
+
+            <Label Text="Longitude:" />
+            <Entry x:Name="lbl_longitude" Text="-122,084" />
+
+            <Button Text="Obter Placemark" Clicked="Button_Clicked_1" />
+
+            <Label x:Name="lbl_reverso" Text="Dados gerais de Local" />
+
+            <Button Text="Obter Previsão do Tempo" Clicked="Button_Clicked_2" />
+
+            <Label x:Name="lbl_previsao" />
+
+            <!-- Segunda parte da interface - novos campos -->
+            <Label Text="Data:" />
+            <Entry x:Name="lbl_data" Placeholder="yyyy-MM-dd" />
+
+            <Button Text="Buscar Previsão por Data" Clicked="Button_Buscar_Clicked" />
+
+            <Label x:Name="lbl_previsao_antiga" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
